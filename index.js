@@ -120,7 +120,6 @@ if (isMainThread) {
         cookie: cookies,
         "Referrer-Policy": "same-origin"
       };
-      console.log(captchaToken)
 
       const data = `csrfmiddlewaretoken=${csrfmiddlewaretoken}&valor-indicado-20=&valor-indicado-19=Paulinho+O+Loko&nome=${encodeURIComponent(nome)}&email=${encodeURIComponent(email)}&telefone=${telefone}&cf-turnstile-response=${captchaToken}`;
 
