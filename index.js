@@ -7,6 +7,7 @@ const axios = require("axios");
 
 let successfulVotes = 0;
 
+
 if (isMainThread) {
   for (let i = 0; i < 10; i++) {
     const worker = new Worker(__filename);
@@ -92,7 +93,7 @@ if (isMainThread) {
         cookie: cookies,
       };
 
-      const data = `csrfmiddlewaretoken=${csrfmiddlewaretoken}&valor-indicado-20=Sato&valor-indicado-19=JonVlogs&valor-indicado-31=ProbIems&valor-indicado-32=Thamas+Morelli&valor-indicado-2=nqz&valor-indicado-3=Juu&valor-indicado-4=NotPedro&valor-indicado-5=Phzin&valor-indicado-6=MT7&valor-indicado-7=Diego&valor-indicado-8=Guigo&valor-indicado-9=Felipox&valor-indicado-10=KV1&valor-indicado-11=bokor&valor-indicado-12=None&valor-indicado-13=Allie&valor-indicado-14=MIBR&valor-indicado-15=League+of+Legends&valor-indicado-16=Vascurado&valor-indicado-17=meli&valor-indicado-18=Minerva&valor-indicado-21=Less&valor-indicado-22=Resende&valor-indicado-23=Vento&valor-indicado-28=napeR&valor-indicado-30=W7M+-+Rainbow+Six&nome=${encodeURIComponent(nome)}&email=${encodeURIComponent(email)}&telefone=${telefone}&cf-turnstile-response=${captchaToken}`;
+      const data = `csrfmiddlewaretoken=${csrfmiddlewaretoken}&valor-indicado-20=KSCERATO&valor-indicado-19=JonVlogs&valor-indicado-31=ProbIems&valor-indicado-32=Nicole+Diretora&valor-indicado-2=snowzin&valor-indicado-3=Nandaa&valor-indicado-4=Rang13&valor-indicado-5=Phzin&valor-indicado-6=Noda&valor-indicado-7=Lucasxgamer&valor-indicado-8=Jojo&valor-indicado-9=Paluh&valor-indicado-10=KJ&valor-indicado-11=Poppins&valor-indicado-12=bizerra&valor-indicado-13=Angeliss&valor-indicado-14=Alpha7&valor-indicado-15=Mobile+Legends&valor-indicado-16=JMDECK&valor-indicado-17=XRM&valor-indicado-18=Baiano&valor-indicado-21=Lukxo&valor-indicado-22=Henrykinho&valor-indicado-23=Lins7&valor-indicado-28=Cabel%C3%A3o+Jeimes&valor-indicado-30=Influence+Rage+-+PUBG+Mobile&nome=${encodeURIComponent(nome)}&email=${encodeURIComponent(email)}&telefone=${telefone}&cf-turnstile-response=${captchaToken}`;
 
       const postResponse = await axios.post("https://peb.gg/votacoes/indicacao_publica/", data, { headers });
 
